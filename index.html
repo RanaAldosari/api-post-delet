@@ -11,9 +11,12 @@
 
 <div id="containerDiv" style="background-color: antiquewhite; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
     <div id="container" class="w-25 d-flex flex-column gap-3" style="padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: white;">
-        <input type="text" class="form-control form-control-lg" id="userName" placeholder="Enter your name">
-        <textarea id="textarea" class="form-control" placeholder="Enter your post"></textarea>
+        <input type="text" class="form-control form-control-lg" id="userName" placeholder="Enter your name" required>
+        <span id="name-error"></span>
+        <textarea id="textarea" class="form-control" placeholder="Enter your post" required></textarea>
+        <span id="text-error"></span>
         <img src="https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Post User" id="img" style="width: 100%; height: auto; border-radius: 5px;">
+       <span id="img-error"></span>
         <button id="btn" class="btn" style="background-color: rgb(58, 30, 30); color: aliceblue;">Submit</button>
     </div>
     <div id="displayUsers" style="margin-top: 30px; width: 80%; display: flex; flex-direction: column; gap: 15px;"></div>
